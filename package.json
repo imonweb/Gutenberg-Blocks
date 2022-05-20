@@ -2,7 +2,7 @@
 	"name": "gutenberg-blocks",
 	"version": "0.1.0",
 	"description": "Example static block scaffolded with Create Block tool.",
-	"author": "The WordPress Contributors",
+	"author": "Alecaddd Give Aways",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {
