@@ -7,7 +7,7 @@ License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
 ## Give away plugin created with:
-Javascript ```
+``` Javascript
 /plugins  npx @wordpress/create-block gutenberg-blocks
 /plugins  cd gutenberg-blocks
 /gutenberg-blocks  npm start
