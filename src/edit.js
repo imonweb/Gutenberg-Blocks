@@ -4,6 +4,7 @@
  * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
  */
 import { __ } from '@wordpress/i18n';
+import { RichText } from '@wordpress/block-editor';
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -29,13 +30,16 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit() {
+export default function Edit(  { className, attributes, setAttributes } ) {
 	return (
-		<p { ...useBlockProps() }>
-			{ __(
-				'Gutenberg Blocks – hello from the editor!',
-				'gutenberg-blocks'
-			) }
-		</p>
+	 <div className={ className }>
+		 <RichText 
+		 		tagName="h2"
+				 placeholder="Gutenberg Block"
+				 value={ attributes.title }
+				 onChange={ ( title ) => setAttributes( { title }) } 
+				 style={ { color: attributes.titleColor }}
+		 />  
+	 </div>
 	);
 }
