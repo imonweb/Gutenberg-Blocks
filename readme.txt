@@ -7,7 +7,11 @@ License:           GPL-2.0-or-later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
 ## Give away plugin created with:
-
+```JavaScript
+npm init -y
+npm i -D nodemon
+npm i express dotenv colors cors mongoose express-async-handler
+```
 ```JavaScript
 /plugins $ npx @wordpress/create-block gutenberg-blocks
 /plugins $ cd gutenberg-blocks
